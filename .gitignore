@@ -1,0 +1,5 @@
+# Untrack folders
+node_modules/
+
+# Related to JetBrains ide
+.DS_Store
