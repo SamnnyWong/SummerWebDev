@@ -6,6 +6,10 @@ import React from "react"
 import Layout from "../components/layout"
 // import Image from "../components/image"
 import SEO from "../components/seo"
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Carousel } from 'react-bootstrap';
+import slide2 from "../images/gatsby-astronaut.png"
+import slide1 from "../images/gatsby-icon.png"
 
 // const IndexPage = ({data}) => {
 //   console.log(data)
@@ -33,6 +37,17 @@ const IndexPage = ({data}) => {
 
     <Layout>
       <SEO title="Home" />
+      <Carousel>
+        <Carousel.Item>
+          <img src={slide1} alt="pic1" style={{ width: '100%',height: '500px' }}/> 
+      
+        </Carousel.Item>
+        <Carousel.Item>
+          <img src={slide2} alt="pic2" style={{ width: '100%',height: '500px'}}/> 
+        </Carousel.Item>
+
+      </Carousel>
+
       {/*<h1>Hi people</h1>*/}
       {/*<p>Welcome to your new Gatsby site.</p>*/}
       {/*<p>Now go build something great.</p>*/}
